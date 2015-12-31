@@ -124,4 +124,4 @@ def all_exception_handler(error):
     return render_template('errors/500.html'), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
