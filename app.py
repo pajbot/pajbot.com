@@ -49,22 +49,53 @@ class TwitchBot:
     def __init__(self, **options):
         self.__dict__ = options
 
-bots = []
-bots.append(TwitchBot(
-    website='https://forsen.tv/',
-    bot='Snusbot',
-    streamer=('forsenlol', 'Forsen'),
-    ))
-bots.append(TwitchBot(
-    website='https://imaqtpie.pajlada.se/',
-    bot='wowsobot',
-    streamer=('imaqtpie', 'imaqtpie'),
-    ))
-bots.append(TwitchBot(
-    website='https://paj.pajlada.se/',
-    bot='pajbot',
-    streamer=('pajlada', 'pajlada'),
-    ))
+bots = [
+        TwitchBot(
+            website='https://forsen.tv',
+            bot='Snusbot',
+            streamer=('forsenlol', 'Forsen'),
+            ),
+        TwitchBot(
+            website='https://imaqtpie.pajlada.se',
+            bot='wowsobot',
+            streamer=('imaqtpie', 'imaqtpie'),
+            ),
+        TwitchBot(
+            website='https://paj.pajlada.se',
+            bot='pajbot',
+            streamer=('pajlada', 'pajlada'),
+            ),
+        TwitchBot(
+            website='https://nymn.pajlada.se',
+            bot='botnextdoor',
+            streamer=('nymn_hs', 'NymN'),
+            ),
+        TwitchBot(
+            website='http://amaz.pajlada.se',
+            bot='ScamazBot',
+            streamer=('amazhs', 'Amaz'),
+            ),
+        TwitchBot(
+            website='http://eloise.pajlada.se',
+            bot='Niconicobot',
+            streamer=('eloise_ailv', 'Eloise'),
+            ),
+        TwitchBot(
+            website='http://trans.pajlada.se',
+            bot='misoobot',
+            streamer=('transcendence9', 'Transcendence9'),
+            ),
+        TwitchBot(
+            website='https://tyggbar.pajlada.se',
+            bot='tyggbot',
+            streamer=('tyggbar', 'Tyggbar'),
+            ),
+        TwitchBot(
+            website='https://nani.pajlada.se',
+            bot='reipbot',
+            streamer=('naniheichou', 'NaniHeichou'),
+            ),
+        ]
 
 @app.route('/')
 def home():

@@ -3,7 +3,13 @@
 <div class="ui grid pjumbo">
     <div class="row">
         <div class="column large center aligned plarge">
-            <p>pajbot is a custom built bot with a bunch of features.</p>
+            <p>pajbot is a custom built bot with a bunch of features. <strong>pajlada</strong> is its creator!</p>
+            <p>
+            <a href="http://twitch.tv/pajlada"><i class="icon twitch black"></i>pajlada</a>
+            <a href="https://github.com/pajlada"><i class="icon github black"></i>pajlada</a>
+            <a href="https://twitter.com/pajlada"><i class="icon twitter black"></i>pajlada</a>
+            </p>
+            <p>You can contact me through any of the mediums listed above.</p>
         </div>
     </div>
 </div>
@@ -14,7 +20,7 @@
         <div class="column pbot" style="width: 50%;">
             <h2 class="ui medium header">{{ bot.bot }}</h2>
             <div><i class="icon twitch"></i> <a href="http://twitch.tv/{{ bot.streamer[0] }}">twitch.tv/{{ bot.streamer[0] }}</a></div>
-            <div><i class="icon star"></i> <a href="{{ bot.website }}">{{ (bot.website|remove_protocol)[:-1] }}</a></div>
+            <div><i class="icon star"></i> <a href="{{ bot.website }}">{{ bot.website|remove_protocol }}</a></div>
         </div>
         {% endfor %}
         </div>
