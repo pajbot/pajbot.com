@@ -15,11 +15,15 @@
 </div>
 <div class="ui grid">
     {% for n in range(0, bots|length, 2) %}
+        {% if bots[n:n+2]|length == 2 %}
         <div class="two column row">
+            {% else %}
+        <div class="two column row">
+            {% endif %}
         {% for bot in bots[n:n+2] %}
-        <div class="column pbot" style="width: 50%;">
+        <div class="column pbot">
             <h2 class="ui medium header">{{ bot.bot }}</h2>
-            <div><i class="icon twitch"></i> <a href="http://twitch.tv/{{ bot.streamer[0] }}">twitch.tv/{{ bot.streamer[0] }}</a></div>
+            <div><i class="icon twitch"></i> <a href="http://twitch.tv/{{ bot.streamer[0] }}">{{ bot.streamer[0] }}</a></div>
             <div><i class="icon star"></i> <a href="{{ bot.website }}">{{ bot.website|remove_protocol }}</a></div>
         </div>
         {% endfor %}
