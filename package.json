@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/pajlada/pajbot.com/issues"
   },
-  "homepage": "https://github.com/pajlada/pajbot.com#readme"
+  "homepage": "https://github.com/pajlada/pajbot.com#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-watch": "^4.3.5",
+    "semantic-ui": "^2.1.7"
+  }
 }

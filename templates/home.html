@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="ui grid pjumbo">
+    <div class="row">
+        <div class="column large center aligned plarge">
+            <p>pajbot is a custom built bot with a bunch of features.</p>
+        </div>
+    </div>
+</div>
+<div class="ui grid">
+    {% for n in range(0, bots|length, 2) %}
+        <div class="two column row">
+        {% for bot in bots[n:n+2] %}
+        <div class="column pbot" style="width: 50%;">
+            <h2 class="ui medium header">{{ bot.bot }}</h2>
+            <div><i class="icon twitch"></i> <a href="http://twitch.tv/{{ bot.streamer[0] }}">twitch.tv/{{ bot.streamer[0] }}</a></div>
+            <div><i class="icon star"></i> <a href="{{ bot.website }}">{{ (bot.website|remove_protocol)[:-1] }}</a></div>
+        </div>
+        {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

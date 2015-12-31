@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>pajbot</title>
+        <meta name="description" content="pajbot - the worlds leading custom bot service for twitch EleGiggle">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        {% assets "css_all" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="ui page grid">
+            <div class="ui page grid">
+                <nav class="ui text menu navbar">
+                    <div class="left menu">
+                        <a href="/" class="item">pajbot</a>
+                        <a href="/" class="item">Home</a>
+                        <!--
+                        <a href="" class="item">About</a>
+                        <a href="" class="item">Contact</a>
+                        -->
+                    </div>
+                </nav>
+                {% block body %}
+                {% endblock %}
+            </div>    
+        </div>
+    </body>
+</html>
