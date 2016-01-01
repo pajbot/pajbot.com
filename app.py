@@ -76,6 +76,11 @@ bots = [
             streamer=('amazhs', 'Amaz'),
             ),
         TwitchBot(
+            website=None,
+            bot='Annies_Bot',
+            streamer=('anniefuchsia', 'AnnieFuchsia'),
+            ),
+        TwitchBot(
             website='http://eloise.pajlada.se',
             bot='Niconicobot',
             streamer=('eloise_ailv', 'Eloise'),

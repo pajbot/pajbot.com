@@ -25,7 +25,9 @@
         <div class="column pbot">
             <h2 class="ui medium header">{{ bot.bot }}</h2>
             <div><i class="icon twitch"></i> <a href="http://twitch.tv/{{ bot.streamer[0] }}">{{ bot.streamer[1] }}</a></div>
+            {%- if bot.website %}
             <div><i class="icon star"></i> <a href="{{ bot.website }}">{{ bot.website|remove_protocol }}</a></div>
+            {% endif -%}
         </div>
         {% endfor %}
         </div>
