@@ -76,7 +76,7 @@ bots = [
             streamer=('amazhs', 'Amaz'),
             ),
         TwitchBot(
-            website=None,
+            website='https://anniefuchsia.gigglearrows.com',
             bot='Annies_Bot',
             streamer=('anniefuchsia', 'AnnieFuchsia'),
             ),
@@ -100,7 +100,31 @@ bots = [
             bot='reipbot',
             streamer=('naniheichou', 'NaniHeichou'),
             ),
+        TwitchBot(
+            website='https://amaliuz.gigglearrows.com',
+            bot='ProxyMyBot',
+            streamer=('amaliuz', 'Amaliuz'),
+            ),
+        TwitchBot(
+            website='https://linneafly.gigglearrows.com',
+            bot='Linneasbot',
+            streamer=('linneafly', 'Linneafly'),
+            ),
+        TwitchBot(
+            website='http://snooki.pajlada.se',
+            bot='Snookibot',
+            streamer=('snookipoof', 'SnookiPoof'),
+            ),
+        TwitchBot(
+            website='http://dyrus.pajlada.se',
+            bot='BotSeventeen',
+            streamer=('tsm_dyrus', 'Dyrus'),
+            ),
         ]
+
+@app.route('/riot.txt')
+def riot():
+    return make_response('4b119039-ee54-45b4-8a02-5932efdd57d3')
 
 @app.route('/')
 def home():
