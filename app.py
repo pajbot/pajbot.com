@@ -66,12 +66,12 @@ bots = [
             streamer=('pajlada', 'pajlada'),
             ),
         TwitchBot(
-            website='https://nymn.pajlada.se',
+            website='https://nymn.pajbot.com',
             bot='botnextdoor',
             streamer=('nymn_hs', 'NymN'),
             ),
         TwitchBot(
-            website='http://amaz.pajlada.se',
+            website='https://amaz.pajbot.com',
             bot='ScamazBot',
             streamer=('amazhs', 'Amaz'),
             ),
@@ -81,22 +81,22 @@ bots = [
             streamer=('anniefuchsia', 'AnnieFuchsia'),
             ),
         TwitchBot(
-            website='http://eloise.pajlada.se',
+            website='https://eloise.pajbot.com',
             bot='Niconicobot',
             streamer=('eloise_ailv', 'Eloise'),
             ),
         TwitchBot(
-            website='http://trans.pajlada.se',
+            website='https://trans.pajbot.com',
             bot='misoobot',
             streamer=('transcendence9', 'Transcendence9'),
             ),
         TwitchBot(
-            website='https://tyggbar.pajlada.se',
+            website='https://tyggbar.pajbot.com',
             bot='tyggbot',
             streamer=('tyggbar', 'Tyggbar'),
             ),
         TwitchBot(
-            website='https://nani.pajlada.se',
+            website='https://nani.pajbot.com',
             bot='reipbot',
             streamer=('naniheichou', 'NaniHeichou'),
             ),
@@ -111,7 +111,7 @@ bots = [
             streamer=('linneafly', 'Linneafly'),
             ),
         TwitchBot(
-            website='http://snooki.pajlada.se',
+            website='https://snooki.pajbot.com',
             bot='Snookibot',
             streamer=('snookipoof', 'SnookiPoof'),
             ),
