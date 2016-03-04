@@ -11,6 +11,8 @@ import subprocess
 import datetime
 from functools import wraps, update_wrapper
 
+from pajbot.managers import RedisManager
+
 from flask import Flask
 from flask import request
 from flask import render_template
@@ -32,6 +34,8 @@ assets = Environment(app)
 
 css = Bundle('dist/semantic.min.css', 'css/main.min.css', output='dist/bundle.%(version)s.css')
 assets.register('css_all', css)
+
+RedisManager.init()
 
 def nocache(view):
     @wraps(view)
@@ -56,7 +60,7 @@ bots = [
             streamer=('forsenlol', 'Forsen'),
             ),
         TwitchBot(
-            website='https://imaqtpie.pajlada.se',
+            website='https://imaqtpie.pajbot.com',
             bot='wowsobot',
             streamer=('imaqtpie', 'imaqtpie'),
             ),
@@ -120,6 +124,11 @@ bots = [
             bot='BotSeventeen',
             streamer=('tsm_dyrus', 'Dyrus'),
             ),
+        TwitchBot(
+            website='https://jax.pajbot.com',
+            bot='Boterie',
+            streamer=('jaxerie', 'Jaxerie'),
+            ),
         ]
 
 @app.route('/riot.txt')
@@ -128,8 +137,58 @@ def riot():
 
 @app.route('/')
 def home():
-    return render_template('home.html',
-            bots=bots)
+    redis = RedisManager.get()
+    values = redis.hgetall('stream_data')
+    for x in bots:
+        x.online = values.get('{streamer}:online'.format(streamer=x.streamer[0])) == 'True'
+        try:
+            x.viewers = int(values.get('{streamer}:viewers'.format(streamer=x.streamer[0])))
+        except:
+            x.viewers = -1
+        x.viewers_str = millify(x.viewers)
+        x.game = values.get('{streamer}:game'.format(streamer=x.streamer[0]))
+    bots.sort(key=
+            lambda x: (x.online,
+                x.viewers,
+                x.bot), reverse=True,
+            )
+    return render_template('home2.html',
+            bots=bots,
+            values=values)
+
+millnames = ['', 'k', 'm']
+import math
+def millify(n):
+    n = float(n)
+    millidx = max(0, min(len(millnames)-1,
+                     int(math.floor(0 if n == 0 else math.log10(abs(n))/3))))
+
+    if millidx > 0:
+        num = '{:.1f}'.format(n / 10**(3 * millidx)).rstrip('0').rstrip('.')
+        return '{}{}'.format(num, millnames[millidx])
+    else:
+        return '{:.0f}'.format(n / 10**(3 * millidx))
+
+@app.route('/test')
+def test():
+    redis = RedisManager.get()
+    values = redis.hgetall('stream_data')
+    for x in bots:
+        x.online = values.get('{streamer}:online'.format(streamer=x.streamer[0])) == 'True'
+        try:
+            x.viewers = int(values.get('{streamer}:viewers'.format(streamer=x.streamer[0])))
+        except:
+            x.viewers = -1
+        x.viewers_str = millify(x.viewers)
+        x.game = values.get('{streamer}:game'.format(streamer=x.streamer[0]))
+    bots.sort(key=
+            lambda x: (x.online,
+                x.viewers,
+                x.streamer[0]), reverse=True,
+            )
+    return render_template('home2.html',
+            bots=bots,
+            values=values)
 
 @app.template_filter('remove_protocol')
 def remove_protocol(url):
