@@ -129,6 +129,11 @@ bots = [
             bot='Boterie',
             streamer=('jaxerie', 'Jaxerie'),
             ),
+        TwitchBot(
+            website='https://reckful.pajbot.com',
+            bot='exDeeBot',
+            streamer=('reckful', 'Reckful'),
+            ),
         ]
 
 @app.route('/riot.txt')
