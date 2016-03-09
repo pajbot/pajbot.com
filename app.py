@@ -152,7 +152,7 @@ def home():
                 x.viewers,
                 x.bot), reverse=True,
             )
-    return render_template('home2.html',
+    return render_template('home.html',
             bots=bots,
             values=values)
 
@@ -168,27 +168,6 @@ def millify(n):
         return '{}{}'.format(num, millnames[millidx])
     else:
         return '{:.0f}'.format(n / 10**(3 * millidx))
-
-@app.route('/test')
-def test():
-    redis = RedisManager.get()
-    values = redis.hgetall('stream_data')
-    for x in bots:
-        x.online = values.get('{streamer}:online'.format(streamer=x.streamer[0])) == 'True'
-        try:
-            x.viewers = int(values.get('{streamer}:viewers'.format(streamer=x.streamer[0])))
-        except:
-            x.viewers = -1
-        x.viewers_str = millify(x.viewers)
-        x.game = values.get('{streamer}:game'.format(streamer=x.streamer[0]))
-    bots.sort(key=
-            lambda x: (x.online,
-                x.viewers,
-                x.streamer[0]), reverse=True,
-            )
-    return render_template('home2.html',
-            bots=bots,
-            values=values)
 
 @app.template_filter('remove_protocol')
 def remove_protocol(url):
