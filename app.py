@@ -134,11 +134,32 @@ bots = [
             bot='exDeeBot',
             streamer=('reckful', 'Reckful'),
             ),
+        TwitchBot(
+            website='https://nanonoko.pajbot.com',
+            bot='NanoNoBot',
+            streamer=('nanonoko', 'Nanonoko'),
+            ),
+        TwitchBot(
+            website='https://debound.pajbot.com',
+            bot='PepsimaxBot',
+            streamer=('debound', 'Debound'),
+            ),
+        TwitchBot(
+            website='https://raz.pajbot.com',
+            bot='Bot_Raz',
+            streamer=('raz', 'Raz'),
+            ),
+        TwitchBot(
+            website='https://akawonder.pajbot.com',
+            bot='akawonderbot',
+            streamer=('akawonder', 'akawonder'),
+            ),
+        TwitchBot(
+            website='https://taruli.pajbot.com',
+            bot='CougarBot',
+            streamer=('tarulihs', 'TaruliHS'),
+            ),
         ]
-
-@app.route('/riot.txt')
-def riot():
-    return make_response('4b119039-ee54-45b4-8a02-5932efdd57d3')
 
 @app.route('/')
 def home():
