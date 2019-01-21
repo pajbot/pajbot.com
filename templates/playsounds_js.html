@@ -1,0 +1,15 @@
+<h3>
+Javascript stuff for playsounds
+</h3>
+<br>
+<textarea rows="50" cols="150">samples = {
+{% for playsound in playsounds %}    '{{playsound.command}}': { 'url':
+    {%- if playsound.samples|length == 1 -%}
+    '{{ playsound.samples[0].link|escape_single_quotes}}'
+    {%- else -%}
+    [ {% for sample in playsound.samples %} '{{sample.link|escape_single_quotes}}', {% endfor %} ]
+    {%- endif -%}
+    },
+{% endfor -%}
+};
+</textarea>

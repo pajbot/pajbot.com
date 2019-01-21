@@ -24,6 +24,8 @@ from flask import jsonify
 from flask import make_response
 from flask.ext.assets import Environment, Bundle
 
+from samples import playsound_samples, ProcessedSample
+
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
 
@@ -57,7 +59,7 @@ bots = [
         TwitchBot(
             website='https://forsen.tv',
             bot='Snusbot',
-            streamer=('forsenlol', 'Forsen'),
+            streamer=('forsen', 'Forsen'),
             ),
         TwitchBot(
             website='https://imaqtpie.pajbot.com',
@@ -72,12 +74,7 @@ bots = [
         TwitchBot(
             website='https://nymn.pajbot.com',
             bot='botnextdoor',
-            streamer=('nymn_hs', 'NymN'),
-            ),
-        TwitchBot(
-            website='https://amaz.pajbot.com',
-            bot='ScamazBot',
-            streamer=('amazhs', 'Amaz'),
+            streamer=('nymn', 'NymN'),
             ),
         TwitchBot(
             website='https://anniefuchsia.gigglearrows.com',
@@ -102,7 +99,7 @@ bots = [
         TwitchBot(
             website='https://nani.pajbot.com',
             bot='reipbot',
-            streamer=('naniheichou', 'NaniHeichou'),
+            streamer=('nani', 'NaniHeichou'),
             ),
         TwitchBot(
             website='https://amaliuz.gigglearrows.com',
@@ -115,24 +112,9 @@ bots = [
             streamer=('linneafly', 'Linneafly'),
             ),
         TwitchBot(
-            website='https://snooki.pajbot.com',
-            bot='Snookibot',
-            streamer=('snookipoof', 'SnookiPoof'),
-            ),
-        TwitchBot(
-            website='http://dyrus.pajlada.se',
-            bot='BotSeventeen',
-            streamer=('tsm_dyrus', 'Dyrus'),
-            ),
-        TwitchBot(
             website='https://jax.pajbot.com',
             bot='Boterie',
             streamer=('jaxerie', 'Jaxerie'),
-            ),
-        TwitchBot(
-            website='https://reckful.pajbot.com',
-            bot='exDeeBot',
-            streamer=('reckful', 'Reckful'),
             ),
         TwitchBot(
             website='https://nanonoko.pajbot.com',
@@ -140,24 +122,19 @@ bots = [
             streamer=('nanonoko', 'Nanonoko'),
             ),
         TwitchBot(
-            website='https://debound.pajbot.com',
-            bot='PepsimaxBot',
-            streamer=('debound', 'Debound'),
-            ),
-        TwitchBot(
-            website='https://raz.pajbot.com',
-            bot='Bot_Raz',
-            streamer=('raz', 'Raz'),
-            ),
-        TwitchBot(
             website='https://akawonder.pajbot.com',
             bot='akawonderbot',
             streamer=('akawonder', 'akawonder'),
             ),
         TwitchBot(
-            website='https://taruli.pajbot.com',
-            bot='CougarBot',
-            streamer=('tarulihs', 'TaruliHS'),
+            website='https://smaczne.pajbot.com',
+            bot='BrzuchSmacznego',
+            streamer=('smaczne', 'Smaczne'),
+            ),
+        TwitchBot(
+            website='https://dinubot.com',
+            bot='dinubot',
+            streamer=('dinu', 'dinu'),
             ),
         ]
 
@@ -181,6 +158,79 @@ def home():
     return render_template('home.html',
             bots=bots,
             values=values)
+
+operators_str = {
+        0: 'Contains',
+        1: 'StartsWith',
+        2: 'EndsWith',
+        3: 'Exact',
+        }
+
+@app.template_filter('escape_single_quotes')
+def escape_single_quotes(s):
+    return s.replace('\'', '\\\'')
+
+def get_processed_playsounds():
+    processed_playsounds_dict = {}
+    processed_playsounds = []
+    for sample in playsound_samples:
+        if sample.command in processed_playsounds_dict:
+            processed_playsounds_dict[sample.command].add_sample(sample)
+        else:
+            processed_playsounds_dict[sample.command] = ProcessedSample(sample)
+
+    for k in processed_playsounds_dict:
+        processed_playsounds.append(processed_playsounds_dict[k])
+
+    return sorted(processed_playsounds)
+
+
+@app.route('/playsounds')
+def playsounds():
+    processed_playsounds = get_processed_playsounds()
+
+    return render_template('playsounds.html',
+            playsounds=processed_playsounds)
+
+@app.route('/playsounds/js')
+def playsounds_js():
+    processed_playsounds = get_processed_playsounds()
+
+    return render_template('playsounds_js.html',
+            playsounds=processed_playsounds)
+
+@app.route('/playsounds/python')
+def playsounds_python():
+    processed_playsounds = get_processed_playsounds()
+
+    return render_template('playsounds_python.html',
+            playsounds=processed_playsounds)
+
+@app.route('/api/playsounds')
+def api_playsounds():
+    response_data = {
+            'playsounds': playsound_samples,
+            }
+
+    response = app.response_class(
+            response=json.dumps(response_data, default=json_serialize),
+            status=200,
+            mimetype='application/json'
+            )
+
+    return response
+
+
+def json_serialize(obj):
+    if isinstance(obj, datetime.datetime):
+        serial = obj.isoformat()
+        return serial
+    try:
+        return obj.jsonify()
+    except:
+        log.exception('Unable to serialize object with `jsonify`')
+        raise
+    raise TypeError('Type {} is not serializable'.format(type(obj)))
 
 millnames = ['', 'k', 'm']
 import math

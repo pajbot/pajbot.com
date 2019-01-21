@@ -1,0 +1,8 @@
+<h3>
+Python stuff for playsounds
+</h3>
+<br>
+<textarea rows="50" cols="150">valid_samples = {
+{% for playsound in playsounds %}    '{{playsound.command}}': { 'length': 0 },
+{% endfor -%} }
+</textarea>

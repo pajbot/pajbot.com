@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block title %}pajbot - playsounds{% endblock %}
+{% block scripts %}
+    <script>
+function playOrStopSound(elem, audio) {
+    if (elem.innerHTML === 'Stop') {
+        elem.innerHTML = 'Play';
+        audio.pause();
+        audio.currentTime = 0;
+    } else {
+        elem.innerHTML = 'Stop';
+        audio.play();
+    }
+}
+
+{% for playsound in playsounds %}
+{% endfor %}
+    </script>
+{% endblock %}
+
+{% block body %}
+<h3>
+Playsounds available for pajbot variants can be found and tested here
+</h3>
+
+<table>
+    {% for playsound in playsounds %}
+    <tr>
+        <td>!#playsound {{ playsound.command }}</td>
+        <td>
+            {% for sample in playsound.samples %}
+            <button data-audio-link="{{sample.link}}" class="playsound-button" alt="Added {{sample.date_added}}">Play</button>
+            {% endfor %}
+            </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+{% block endscripts %}
+<script>
+var elems = [];
+var sounds = {};
+window.onload = function() {
+    var elem = undefined;
+    var snd = undefined;
+    let playsounds = document.getElementsByClassName('playsound-button');
+    for (let i = 0; i < playsounds.length; ++i) {
+        let elem = playsounds[i];
+        elem.addEventListener("click", function(asd) { 
+            let href = this.getAttribute('data-audio-link');
+            let id = href;
+            sounds[id] = new Audio(href);
+            let test = this;
+            sounds[id].onended = function() {
+                test.innerHTML = 'Play';
+            };
+            playOrStopSound(this, sounds[id]);
+        });
+    }
+}
+</script>
+{% endblock %}
