@@ -142,5 +142,269 @@
     "ChannelName": "forsen",
     "ChannelID": "22484632",
     "Domain": "forsen.tv"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "alazymeme",
+    "ChannelID": "103973901",
+    "Domain": "bot.alazymeme.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "samtwocan",
+    "ChannelID": "138980246",
+    "Domain": "samtwocan.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "olii",
+    "ChannelID": "100515683",
+    "Domain": "olii.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "weest",
+    "ChannelID": "130924701",
+    "Domain": "bot.weest.tv"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "sohyp3d",
+    "ChannelID": "98459625",
+    "Domain": "sohyp3d.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "emergencycurse",
+    "ChannelID": "76943040",
+    "Domain": "emergencycurse.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "fabzeef",
+    "ChannelID": "148973258",
+    "Domain": "fabzeef.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "griphthefrog",
+    "ChannelID": "98460637",
+    "Domain": "griph.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "htooony7",
+    "ChannelID": "165900034",
+    "Domain": "htooony7.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "koraymane",
+    "ChannelID": "71927475",
+    "Domain": "koraymane.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "baddra_",
+    "ChannelID": "184903421",
+    "Domain": "baddra.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "vybewolf",
+    "ChannelID": "37907994",
+    "Domain": "vybewolf.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "zoro491",
+    "ChannelID": "91501224",
+    "Domain": "zoro491.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "maiman",
+    "ChannelID": "261583209",
+    "Domain": "maiman.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "mightyoaks",
+    "ChannelID": "64109524",
+    "Domain": "mightyoaks.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "kattah",
+    "ChannelID": "137199626",
+    "Domain": "kattah.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "heyimbee",
+    "ChannelID": "26903378",
+    "Domain": "heyimbee.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "christinafitzgerald",
+    "ChannelID": "459747135 ",
+    "Domain": "christinafitzgerald.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "alternateau",
+    "ChannelID": "171817716",
+    "Domain": "alternateau.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "lystens",
+    "ChannelID": "96161741",
+    "Domain": "lystens.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "cyacharlie",
+    "ChannelID": "430913040",
+    "Domain": "cyacharlie.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "onezart",
+    "ChannelID": "65310814",
+    "Domain": "onezart.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "peepoge",
+    "ChannelID": "499404707",
+    "Domain": "peepoge.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "liptongod",
+    "ChannelID": "61021189",
+    "Domain": "liptongod.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "hottemperz",
+    "ChannelID": "68728148",
+    "Domain": "hottemperz.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "hyruverse",
+    "ChannelID": "171892065",
+    "Domain": "bot.hyru.tv"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "latzie",
+    "ChannelID": "412864803",
+    "Domain": "latzie.feelsokaybot.com"
+  },
+  {
+    "Hoster": "alazymeme",
+    "ChannelName": "echoflex",
+    "ChannelID": "128217169",
+    "Domain": "echoflex.feelsokaybot.com"
+  },
+  {
+    "Hoster": "zneix",
+    "ChannelName": "minusinsanity",
+    "ChannelID": "17497365",
+    "Domain": "minus.zneix.eu"
+  },
+  {
+    "Hoster": "zneix",
+    "ChannelName": "senderak",
+    "ChannelID": "161786214",
+    "Domain": "senderak.zneix.eu"
+  },
+  {
+    "Hoster": "zneix",
+    "ChannelName": "tastiic",
+    "ChannelID": "104645456",
+    "Domain": "tastiic.zneix.eu"
+  },
+  {
+    "Hoster": "zneix",
+    "ChannelName": "zneix",
+    "ChannelID": "99631238",
+    "Domain": "twitchbot.zneix.eu"
+  },
+  {
+    "Hoster": "mm2pl",
+    "ChannelName": "mm2pl",
+    "ChannelID": "117691339",
+    "Domain": "pb.kotmisia.pl"
+  },
+  {
+    "Hoster": "melonify",
+    "ChannelName": "cyr",
+    "ChannelID": "37522866",
+    "Domain": "cyrbot.com"
+  },
+  {
+    "Hoster": "hackmagic",
+    "ChannelName": "hackmagic",
+    "ChannelID": "58394079",
+    "Domain": "twitch.magichack.xyz"
+  },
+  {
+    "Hoster": "hackmagic",
+    "ChannelName": "pepto__bismol",
+    "ChannelID": "50495856",
+    "Domain": "pepto.magichack.xyz"
+  },
+  {
+    "Hoster": "hackmagic",
+    "ChannelName": "ron__johnson_",
+    "ChannelID": "613147117",
+    "Domain": "ron.magichack.xyz"
+  },
+  {
+    "Hoster": "hackmagic",
+    "ChannelName": "yung_randd",
+    "ChannelID": "225912010",
+    "Domain": "randd.magichack.xyz"
+  },
+  {
+    "Hoster": "qfm23",
+    "ChannelName": "swushwoi",
+    "ChannelID": "150648930",
+    "Domain": "swushwoi.qfm23.xyz"
+  },
+  {
+    "Hoster": "sunred",
+    "ChannelName": "kian",
+    "ChannelID": "414653932",
+    "Domain": "kian.snrd.de"
+  },
+  {
+    "Hoster": "nam______________________",
+    "ChannelName": "nam______________________",
+    "ChannelID": "120183018",
+    "Domain": "nam.nymn.tv"
+  },
+  {
+    "Hoster": "datguy1",
+    "ChannelName": "admiralbulldog",
+    "ChannelID": "30816637",
+    "Domain": "admiralbulldog.live"
+  },
+  {
+    "Hoster": "tetyys",
+    "ChannelName": "vadikus007",
+    "ChannelID": "72256775",
+    "Domain": "vadikus007.tetyys.com"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "lacari",
+    "ChannelID": "29400754",
+    "Domain": "lacari.live"
   }
 ]
