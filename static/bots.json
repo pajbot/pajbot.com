@@ -313,6 +313,18 @@
   },
   {
     "Hoster": "zneix",
+    "ChannelName": "1xelerate",
+    "ChannelID": "140114344",
+    "Domain": "1xelerate.zneix.eu"
+  },
+  {
+    "Hoster": "zneix",
+    "ChannelName": "katelynerika",
+    "ChannelID": "128577125",
+    "Domain": "katelynerika.zneix.eu"
+  },
+  {
+    "Hoster": "zneix",
     "ChannelName": "minusinsanity",
     "ChannelID": "17497365",
     "Domain": "minus.zneix.eu"
