@@ -1,79 +1,57 @@
-[
-  {
+{
   "pajlada": {
     "Twitch": "https://twitch.tv/pajlada",
     "Twitter": "https://twitter.com/pajlada",
     "Discord": "pajlada#2107"
-  }
-},
-  {
+  },
   "alazymeme": {
     "Twitch": "https://twitch.tv/alazymeme",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "zneix": {
     "Twitch": "https://twitch.tv/zneix",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "hackmagic": {
     "Twitch": "https://twitch.tv/hackmagic",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "mm2pl": {
     "Twitch": "https://twitch.tv/mm2pl",
     "Twitter": "",
     "Discord": ""
-  }
-},  
-  {
+  },
   "melonify": {
     "Twitch": "https://twitch.tv/melonify",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "qfm23": {
     "Twitch": "https://twitch.tv/qfm23",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "sunred": {
     "Twitch": "https://twitch.tv/sunred",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "datguy1": {
     "Twitch": "https://twitch.tv/datguy1",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "tetyys": {
     "Twitch": "https://twitch.tv/tetyys",
     "Twitter": "",
     "Discord": ""
-  }
-},
-  {
+  },
   "troydota": {
     "Twitch": "https://twitch.tv/troydota",
     "Twitter": "",
     "Discord": ""
   }
 }
-]
