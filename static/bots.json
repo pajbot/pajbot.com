@@ -424,5 +424,77 @@
     "ChannelName": "lacari",
     "ChannelID": "29400754",
     "Domain": "lacari.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "CartiTarti",
+    "ChannelID": "42495639",
+    "Domain": "cartitarti.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "dreamocell",
+    "ChannelID": "58348650",
+    "Domain": "dreamocell.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "gunnardota2",
+    "ChannelID": "131202285",
+    "Domain": "gunnardota2.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "invokergirl",
+    "ChannelID": "112236984",
+    "Domain": "invokergirl.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "j2afc",
+    "ChannelID": "36201061",
+    "Domain": "j2afc.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "lukiluki",
+    "ChannelID": "36945314",
+    "Domain": "lukiluki.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "monkeys_forever",
+    "ChannelID": "34932688",
+    "Domain": "monkeysforever.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "priscillaah",
+    "ChannelID": "41372000",
+    "Domain": "priscillaah.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "quinndota",
+    "ChannelID": "107321074",
+    "Domain": "quinndota.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "rohofireflu",
+    "ChannelID": "155428373",
+    "Domain": "rohofireflu.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "sheepsticked",
+    "ChannelID": "88876387",
+    "Domain": "sheepsticked.troybot.live"
+  },
+  {
+    "Hoster": "troydota",
+    "ChannelName": "starjadian",
+    "ChannelID": "141819553",
+    "Domain": "starjadian.troybot.live"
   }
 ]
