@@ -496,5 +496,35 @@
     "ChannelName": "starjadian",
     "ChannelID": "141819553",
     "Domain": "starjadian.troybot.live"
+  },
+  {
+    "Hoster": "dinu",
+    "ChannelName": "supermad",
+    "ChannelID": "59752415",
+    "Domain": "wolverine.wiki"
+  },
+  {
+    "Hoster": "dinu",
+    "ChannelName": "drdruh",
+    "ChannelID": "596619293",
+    "Domain": "drdruh.xyz"
+  },
+  {
+    "Hoster": "dinu",
+    "ChannelName": "crackshotplays",
+    "ChannelID": "208361237",
+    "Domain": "robotshot.xyz"
+  },
+  {
+    "Hoster": "dinu",
+    "ChannelName": "helm",
+    "ChannelID": "144398644",
+    "Domain": "helm.stream"
+  },
+  {
+    "Hoster": "dinu",
+    "ChannelName": "blackpandaog",
+    "ChannelID": "674357651",
+    "Domain": "blackpanda.wtf"
   }
 ]
