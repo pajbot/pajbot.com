@@ -132,8 +132,8 @@ bots = [
             streamer=('smaczne', 'Smaczne'),
             ),
         TwitchBot(
-            website='https://dinubot.com',
-            bot='dinubot',
+            website='https://dinubot.xyz',
+            bot='wazza',
             streamer=('dinu', 'dinu'),
             ),
         ]
