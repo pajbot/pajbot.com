@@ -526,5 +526,17 @@
     "ChannelName": "blackpandaog",
     "ChannelID": "674357651",
     "Domain": "blackpanda.wtf"
+  },
+  {
+    "Hoster": "basedbidoof",
+    "ChannelName": "cyr",
+    "ChannelID": "37522866",
+    "Domain": "cyrbot.com",
+  },
+  {
+    "Hoster": "basedbidoof",
+    "ChannelName": "carter",
+    "ChannelID": "26077374",
+    "Domain": "carterdotbot.cyrbot.com"
   }
 ]
