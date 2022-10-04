@@ -112,11 +112,6 @@ bots = [
             streamer=('linneafly', 'Linneafly'),
             ),
         TwitchBot(
-            website='https://jaxerie.pajbot.com',
-            bot='Boterie',
-            streamer=('jaxerie', 'Jaxerie'),
-            ),
-        TwitchBot(
             website='https://nanonoko.pajbot.com',
             bot='NanoNoBot',
             streamer=('nanonoko', 'Nanonoko'),
