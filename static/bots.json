@@ -532,5 +532,41 @@
     "ChannelName": "cyr",
     "ChannelID": "37522866",
     "Domain": "cyrbot.com"
+  },
+  {
+    "Hoster": "zonianmidian",
+    "ChannelName": "zonianmidian",
+    "ChannelID": "475748597",
+    "Domain": "bot.zonian.dev"
+  },
+  {
+    "Hoster": "zonianmidian",
+    "ChannelName": "chainavt",
+    "ChannelID": "584309259",
+    "Domain": "chaina.spanix.team"
+  },
+  {
+    "Hoster": "zonianmidian",
+    "ChannelName": "fapparamoar",
+    "ChannelID": "179992320",
+    "Domain": "fap.spanix.team"
+  },
+  {
+    "Hoster": "zonianmidian",
+    "ChannelName": "nimuvt",
+    "ChannelID": "495899004",
+    "Domain": "nimu.spanix.team"
+  },
+  {
+    "Hoster": "zonianmidian",
+    "ChannelName": "papitasvt",
+    "ChannelID": "592771878",
+    "Domain": "papitas.spanix.team"
+  },
+  {
+    "Hoster": "zonianmidian",
+    "ChannelName": "rubius",
+    "ChannelID": "39276140",
+    "Domain": "rubius.spanix.team"
   }
 ]
